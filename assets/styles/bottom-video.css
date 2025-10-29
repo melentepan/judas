@@ -23,19 +23,6 @@
   mask-size: 100% 100%;
 }
 
-.bottom-black-block {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0px;
-  height: 300px;
-  transform: translateY(100%);
-  background-color: #000;
-  z-index: 99;
-  pointer-events: none;
-  overflow-y: visible;
-}
-
 @media screen and (max-width: 768px) {
   .bottom-fixed-video {
     object-position: center bottom;
