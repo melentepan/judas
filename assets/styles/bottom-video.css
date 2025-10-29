@@ -1,8 +1,9 @@
 .bottom-fixed-video {
   position: fixed;
-  left: 0;
+  left: -5px;
+  right: -5px;
   bottom: 0;
-  width: 100%;
+  width: calc(100% + 10px);
   object-fit: cover;
   object-position: center bottom;
   z-index: 100;
