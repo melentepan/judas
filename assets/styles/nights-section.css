@@ -1,0 +1,504 @@
+.nights-section {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  padding: 0;
+  margin: 0;
+}
+
+.nights-container {
+  display: flex;
+  width: calc(100% - 300px);
+  height: 100vh;
+  position: relative;
+  margin: 0 150px;
+}
+
+.night-panel {
+  flex: 1;
+  position: relative;
+  height: 100vh;
+}
+
+.night-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.night-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.night-caption {
+  position: absolute;
+  z-index: 2;
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.night-1 .night-caption {
+  top: 200px;
+  left: 100px;
+}
+
+.night-2 .night-caption {
+  top: 120px;
+  right: 140px;
+}
+
+.night-3 .night-caption {
+  top: 200px;
+  right: 10px;
+}
+
+.night-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.night-1 .night-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.night-2 .night-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.night-3 .night-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.judas-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 60px;
+}
+
+.butterfly-logo {
+  width: 81px;
+  height: 61px;
+}
+
+.judas-text {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+.nightmare-title {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 250px;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.web3-season {
+  font-size: 36px;
+}
+
+.rewards {
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.nightmare-text {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.3;
+  width: 530px;
+}
+
+.nightmare-text p {
+  margin-bottom: 16px;
+}
+
+.warning-text-remember {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.warning-text {
+  font-weight: 600 !important;
+  font-size: 24px !important;
+}
+
+.unreal-section {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.unreal-text {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  max-width: 275px;
+}
+
+.unreal-logo {
+  width: 75px;
+  height: auto;
+}
+
+.bottom-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.alpha-text {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  text-wrap: nowrap;
+}
+
+.studio-text {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  text-wrap: nowrap;
+}
+
+.studio-light {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1600px) {
+  .nights-container {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+
+  .unreal-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .bottom-text {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nightmare-title {
+    font-size: 40px;
+  }
+
+  .nightmare-text {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nights-container {
+    width: calc(100% - 60px);
+    margin: 0 30px;
+  }
+
+  .night-3 .night-caption {
+    top: 150px;
+    right: 10px;
+  }
+  .night-1 .night-caption {
+    top: 150px;
+    left: 50px;
+  }
+
+  .night-2 .night-caption {
+    top: 100px;
+    right: 80px;
+  }
+
+  .night-3 .night-caption {
+    top: 150px;
+    right: 10px;
+  }
+
+  .nightmare-title {
+    font-size: 36px;
+    margin-top: 200px;
+  }
+
+  .web3-season,
+  .rewards {
+    font-size: 28px;
+  }
+
+  .nightmare-text {
+    width: 400px;
+    font-size: 15px;
+  }
+
+  .judas-text {
+    font-size: 32px;
+  }
+
+  .butterfly-logo {
+    width: 70px;
+    height: 53px;
+  }
+
+  .unreal-text {
+    font-size: 18px;
+    max-width: 230px;
+  }
+
+  .alpha-text {
+    font-size: 20px;
+  }
+
+  .studio-text {
+    font-size: 32px;
+  }
+
+  .studio-light {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nights-section {
+    min-height: auto;
+  }
+
+  .nights-container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .night-panel {
+    height: 60vh;
+    min-height: 500px;
+  }
+
+  .night-content {
+    padding: 30px 20px;
+  }
+
+  .night-1 .night-caption {
+    top: 100px;
+    left: 20px;
+  }
+
+  .night-2 .night-caption {
+    top: 80px;
+    right: 20px;
+  }
+
+  .night-3 .night-caption {
+    top: 100px;
+    right: 20px;
+  }
+
+  .night-caption {
+    font-size: 18px;
+  }
+
+  .judas-logo {
+    margin-top: 40px;
+    gap: 12px;
+  }
+
+  .butterfly-logo {
+    width: 60px;
+    height: 45px;
+  }
+
+  .judas-text {
+    font-size: 28px;
+  }
+
+  .nightmare-title {
+    font-size: 28px;
+    margin-top: 150px;
+    text-wrap: wrap;
+  }
+
+  .web3-season,
+  .rewards {
+    font-size: 24px;
+  }
+
+  .nightmare-text {
+    width: 100%;
+    max-width: 500px;
+    font-size: 14px;
+  }
+
+  .warning-text {
+    font-size: 20px !important;
+  }
+
+  .warning-text-remember {
+    font-size: 14px;
+  }
+
+  .unreal-text {
+    font-size: 16px;
+    max-width: 200px;
+  }
+
+  .unreal-logo {
+    width: 60px;
+  }
+
+  .bottom-text {
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .alpha-text {
+    font-size: 18px;
+  }
+
+  .studio-text {
+    font-size: 28px;
+  }
+
+  .studio-light {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .night-panel {
+    height: 50vh;
+    min-height: 400px;
+  }
+
+  .night-content {
+    padding: 20px 15px;
+  }
+
+  .night-caption {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  .night-1 .night-caption {
+    top: 80px;
+    left: 15px;
+  }
+
+  .night-2 .night-caption {
+    top: 60px;
+    right: 15px;
+  }
+
+  .night-3 .night-caption {
+    top: 80px;
+    right: 15px;
+  }
+
+  .judas-logo {
+    margin-top: 30px;
+    gap: 10px;
+  }
+
+  .butterfly-logo {
+    width: 50px;
+    height: 38px;
+  }
+
+  .judas-text {
+    font-size: 24px;
+  }
+
+  .nightmare-title {
+    font-size: 22px;
+    margin-top: 100px;
+  }
+
+  .web3-season,
+  .rewards {
+    font-size: 20px;
+  }
+
+  .nightmare-text {
+    font-size: 13px;
+  }
+
+  .nightmare-text p {
+    margin-bottom: 12px;
+  }
+
+  .warning-text {
+    font-size: 18px !important;
+  }
+
+  .warning-text-remember {
+    font-size: 13px;
+  }
+
+  .unreal-text {
+    font-size: 14px;
+    max-width: 180px;
+  }
+
+  .unreal-logo {
+    width: 50px;
+  }
+
+  .alpha-text {
+    font-size: 16px;
+  }
+
+  .studio-text {
+    font-size: 24px;
+  }
+
+  .studio-light {
+    font-size: 14px;
+  }
+}

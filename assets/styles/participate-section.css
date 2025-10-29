@@ -1,0 +1,162 @@
+.participate-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.participate-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.participate-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.participate-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.participate-content {
+  width: 487px;
+  background-color: #000;
+  padding: 40px 30px;
+  margin-right: 525px;
+  height: 100%;
+}
+
+.participate-heading-1 {
+  margin-top: 175px;
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.participate-heading-2 {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.participate-text {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.participate-text p {
+  margin-bottom: 20px;
+}
+
+.participate-text p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .participate-content {
+    margin-right: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .participate-content {
+    margin-right: 150px;
+    width: 450px;
+  }
+
+  .participate-heading-1 {
+    margin-top: 120px;
+    font-size: 32px;
+  }
+
+  .participate-heading-2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .participate-container {
+    justify-content: center;
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 0;
+  }
+
+  .participate-content {
+    margin-right: 0;
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px 25px;
+    height: auto;
+  }
+
+  .participate-heading-1 {
+    margin-top: 0;
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .participate-heading-2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .participate-text {
+    font-size: 15px;
+  }
+
+  .participate-text p {
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .participate-container {
+    padding: 40px 0;
+  }
+
+  .participate-content {
+    max-width: 100%;
+    margin: 0 15px;
+    padding: 25px 20px;
+  }
+
+  .participate-heading-1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .participate-heading-2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .participate-text {
+    font-size: 14px;
+  }
+
+  .participate-text p {
+    margin-bottom: 15px;
+  }
+}

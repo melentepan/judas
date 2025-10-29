@@ -1,0 +1,217 @@
+.childhood-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.childhood-background {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.childhood-background::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 380px;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/childhood/childhood-woman.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 3;
+}
+
+.childhood-bg-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.childhood-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.childhood-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 40px;
+  gap: 10px;
+}
+
+.childhood-left {
+  flex: 1;
+}
+
+.childhood-title {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.childhood-button {
+  background: #c4b58299;
+  border: 1px solid #fff;
+  padding: 6px 23px;
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 80px;
+}
+
+.childhood-button span {
+  display: block;
+}
+
+.childhood-button:hover {
+  background: #b8941f;
+}
+
+.childhood-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.childhood-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.childhood-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.skotch-overlay {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.skotch-text {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #2a2929;
+  text-align: center;
+  z-index: 11;
+  pointer-events: none;
+  max-width: 160px;
+  text-wrap: nowrap;
+}
+
+@media screen and (max-width: 1300px) {
+  .childhood-image {
+    max-width: 80%;
+  }
+
+  .skotch-overlay,
+  .skotch-text {
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .childhood-image {
+    max-width: 70%;
+  }
+
+  .skotch-overlay,
+  .skotch-text {
+    left: 35%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .childhood-content {
+    max-width: 960px;
+    padding: 0 30px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .childhood-title {
+    font-size: 36px;
+  }
+
+  .childhood-button {
+    font-size: 22px;
+    margin-left: 60px;
+  }
+
+  .childhood-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .childhood-background::after {
+    max-width: 280px;
+  }
+
+  .childhood-content {
+    padding: 0 20px;
+  }
+
+  .childhood-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .childhood-button {
+    margin-left: 0;
+    font-size: 20px;
+    padding: 5px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .childhood-background::after {
+    max-width: 200px;
+  }
+
+  .childhood-content {
+    padding: 0 15px;
+  }
+
+  .childhood-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .childhood-button {
+    font-size: 18px;
+    padding: 4px 18px;
+  }
+}

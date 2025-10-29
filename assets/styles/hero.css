@@ -1,0 +1,546 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.layer-0 {
+  background-image: url('../images/paralax/слой-0.png');
+  z-index: 1;
+  transform: translate3d(0, 0, 0) !important;
+  will-change: auto;
+}
+
+.layer-1 {
+  background-image: url('../images/paralax/слой-1.png');
+  z-index: 2;
+}
+
+.layer-2 {
+  background-image: url('../images/paralax/слой-2.png');
+  z-index: 3;
+}
+
+.layer-3 {
+  background-image: url('../images/paralax/слой-3.png');
+  z-index: 4;
+}
+
+.layer-4 {
+  background-image: url('../images/paralax/слой-4.png');
+  z-index: 5;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: end;
+  gap: 20px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding-bottom: 20px;
+  gap: 140px;
+}
+
+.crypto-horror-text {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  color: #fff;
+  animation: fadeInLeft 1s ease-out;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.partner-item {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  animation: fadeInLeft 1s ease-out 0.2s both;
+}
+
+.partner-bold {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+}
+
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  padding-bottom: 18px;
+}
+
+.alpha-test {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  color: #fff;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.hero-title {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 700;
+  font-size: 96px;
+  letter-spacing: 0.2em;
+  color: #fff;
+  animation: fadeInUp 1s ease-out 0.2s both;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3),
+    0 0 40px rgba(255, 255, 255, 0.1);
+}
+
+.hero-title-text {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 700;
+  font-size: 96px;
+  letter-spacing: 0.2em;
+  color: #fff;
+}
+
+.butterfly-icon {
+  width: 145px;
+  height: 110px;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
+  animation: butterfly-float 4s ease-in-out infinite;
+}
+
+@keyframes butterfly-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-5px) rotate(3deg);
+  }
+}
+
+.windows-button {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #c4b582;
+  padding: 6px 23px;
+  border: none;
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease-out 0.4s both;
+  margin-bottom: 190px;
+}
+
+.windows-button:hover {
+  background: #b8941f;
+}
+
+.windows-logo {
+  width: 34px;
+  height: 34px;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  padding-bottom: 80px;
+}
+
+.discord-banner {
+  margin-bottom: 20px;
+  animation: fadeInRight 1s ease-out;
+}
+
+.discord-banner-img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.discord-text {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  max-width: 300px;
+  animation: fadeInRight 1s ease-out 0.2s both;
+}
+
+.hero-center .unreal-logo {
+  margin-top: 40px;
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.unreal-logo {
+  max-width: 150px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .crypto-horror-text {
+    font-size: 28px;
+  }
+
+  .hero-title-text {
+    font-size: 80px;
+  }
+
+  .alpha-test {
+    font-size: 40px;
+  }
+
+  .hero-left {
+    gap: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    height: auto;
+    min-height: auto;
+    padding: 80px 0 60px;
+  }
+
+  .hero-content {
+    height: auto;
+    min-height: auto;
+  }
+
+  .container {
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+  }
+
+  .crypto-horror-text {
+    font-size: 24px;
+  }
+
+  .partner-bold {
+    font-size: 32px;
+  }
+
+  .partner-item {
+    font-size: 18px;
+  }
+
+  .hero-title-text {
+    font-size: 64px;
+  }
+
+  .alpha-test {
+    font-size: 36px;
+  }
+
+  .butterfly-icon {
+    width: 100px;
+    height: 76px;
+  }
+
+  .windows-button {
+    font-size: 18px;
+    padding: 5px 20px;
+    margin-bottom: 150px;
+  }
+
+  .discord-banner-img {
+    max-width: 180px;
+  }
+
+  .discord-text {
+    font-size: 18px;
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: auto;
+    padding: 70px 0 50px;
+  }
+
+  .hero-content {
+    height: auto;
+    min-height: auto;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    padding: 20px 15px;
+    gap: 30px;
+  }
+
+  .hero-left {
+    order: 3;
+    padding-bottom: 0;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-center {
+    order: 1;
+    padding-bottom: 0;
+  }
+
+  .hero-right {
+    order: 2;
+    padding-bottom: 0;
+  }
+
+  .crypto-horror-text {
+    font-size: 20px;
+  }
+
+  .partners {
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .partner-bold {
+    font-size: 24px;
+  }
+
+  .partner-item {
+    font-size: 16px;
+  }
+
+  .alpha-test {
+    font-size: 28px;
+  }
+
+  .hero-title {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-title-text {
+    font-size: 48px;
+    letter-spacing: 0.1em;
+  }
+
+  .butterfly-icon {
+    width: 80px;
+    height: 60px;
+  }
+
+  .windows-button {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .windows-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .hero-center .unreal-logo {
+    margin-top: 20px;
+    max-width: 120px;
+  }
+
+  .discord-banner {
+    margin-bottom: 15px;
+  }
+
+  .discord-banner-img {
+    max-width: 200px;
+  }
+
+  .discord-text {
+    font-size: 16px;
+  }
+
+  .hero-right {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    height: auto;
+    min-height: auto;
+    padding: 60px 0 40px;
+  }
+
+  .hero-content {
+    height: auto;
+    min-height: auto;
+  }
+
+  .container {
+    padding: 15px 10px;
+    gap: 20px;
+  }
+
+  .crypto-horror-text {
+    font-size: 18px;
+  }
+
+  .alpha-test {
+    font-size: 24px;
+  }
+
+  .hero-title-text {
+    font-size: 36px;
+  }
+
+  .butterfly-icon {
+    width: 60px;
+    height: 45px;
+  }
+
+  .windows-button {
+    font-size: 14px;
+    padding: 4px 16px;
+    gap: 10px;
+  }
+
+  .windows-logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .hero-center .unreal-logo {
+    max-width: 100px;
+    margin-top: 15px;
+  }
+
+  .partner-bold {
+    font-size: 20px;
+  }
+
+  .partner-item {
+    font-size: 14px;
+  }
+
+  .discord-banner-img {
+    max-width: 160px;
+  }
+
+  .discord-text {
+    font-size: 14px;
+    max-width: 200px;
+  }
+
+  .parallax-layer {
+    background-size: cover;
+    background-position: center;
+  }
+}

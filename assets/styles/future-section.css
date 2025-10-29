@@ -1,0 +1,291 @@
+.future-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.future-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.future-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.future-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 150px 20px 120px;
+}
+
+.future-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.future-header {
+  display: flex;
+  animation: fadeInUp 1s ease-out;
+
+}
+
+.future-header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.future-butterfly-icon {
+  width: 80px;
+  height: auto;
+  filter: brightness(0);
+  margin-bottom: 10px;
+}
+
+.future-title {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 700;
+  font-size: 96px;
+  letter-spacing: 0.2em;
+  color: #1c1c1c;
+  margin: 0;
+  line-height: 1;
+}
+
+.future-subtitle {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.2em;
+  color: #1c1c1c;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.future-clown {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.clown-image {
+  width: 249px;
+  height: 249px;
+  object-fit: cover;
+}
+
+.future-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 600px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.windows-button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #c4b582;
+  padding: 6px 23px;
+  border: none;
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.windows-button:hover {
+  background: #b8941f;
+}
+
+.windows-logo {
+  width: 34px;
+  height: 34px;
+}
+
+.future-description {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1c1c1c;
+}
+
+.future-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.future-list li {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1c1c1c;
+  padding-left: 15px;
+  position: relative;
+}
+
+.future-list li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .future-section {
+    min-height: auto;
+  }
+
+  .future-container {
+    padding: 120px 20px 100px;
+  }
+
+  .future-title {
+    font-size: 72px;
+  }
+
+  .future-subtitle {
+    font-size: 32px;
+  }
+
+  .clown-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .future-section {
+    min-height: auto;
+  }
+
+  .future-container {
+    padding: 100px 20px 80px;
+  }
+
+  .future-header {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .future-header-left {
+    align-items: center;
+  }
+
+  .future-title {
+    font-size: 56px;
+  }
+
+  .future-subtitle {
+    font-size: 28px;
+  }
+
+  .clown-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .future-main {
+    max-width: 100%;
+  }
+
+  .windows-button {
+    font-size: 18px;
+    padding: 5px 20px;
+  }
+
+  .windows-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .future-description {
+    font-size: 15px;
+  }
+
+  .future-list li {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .future-section {
+    min-height: auto;
+  }
+
+  .future-container {
+    padding: 80px 15px 60px;
+  }
+
+  .future-title {
+    font-size: 40px;
+  }
+
+  .future-subtitle {
+    font-size: 24px;
+  }
+
+  .clown-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .windows-button {
+    font-size: 16px;
+    padding: 4px 18px;
+  }
+
+  .windows-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .future-description {
+    font-size: 14px;
+  }
+
+  .future-list li {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,698 @@
+.closet-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.closet-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.closet-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.closet-container {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  max-width: 100%;
+  margin-right: 20px;
+}
+
+.closet-left {
+  flex: 1;
+  background-color: #000000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 4px;
+}
+
+.closet-monster {
+  position: absolute;
+  bottom: 0;
+  left: -80px;
+  z-index: 10;
+}
+
+.monster-image {
+  width: 90%;
+  max-width: 588px;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom left;
+}
+
+.closet-left-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.closet-left-text {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-top: 110px;
+  z-index: 100;
+}
+
+.closet-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.closet-title-container .closet-left-text {
+  margin-bottom: 0;
+}
+
+.closet-gate-title {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.closet-main-title {
+  font-size: 64px;
+}
+
+.closet-subtitle {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.closet-subtitle span {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.closet-god-text {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.closet-god-text span {
+  font-weight: 700;
+  font-size: 40px;
+  color: #fefefe;
+}
+
+.closet-description {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  max-width: 416px;
+}
+
+.closet-images {
+  position: relative;
+  bottom: 0;
+  height: 300px;
+  width: 300px;
+  z-index: 3;
+}
+
+.polaroid {
+  position: absolute;
+}
+
+.polaroid-image {
+  height: auto;
+  display: block;
+}
+
+.polaroid-1 {
+  top: -200px;
+  z-index: 3;
+}
+
+.polaroid-2 {
+  top: -150px;
+  left: -180px;
+  z-index: 2;
+}
+
+.polaroid-3 {
+  top: 0px;
+  left: 40px;
+  z-index: 3;
+}
+
+.closet-right {
+  flex: 1;
+  position: relative;
+  padding: 0px 4px;
+}
+
+.closet-right-columns {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+}
+
+.closet-right-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 300px;
+}
+
+.closet-right-right {
+  margin-top: 220px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.closet-update-box {
+  position: relative;
+  max-width: 100%;
+  z-index: 3;
+  border: 1px solid #fff;
+}
+
+.update-image {
+  max-width: 505px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.update-text {
+  position: absolute;
+  top: 34px;
+  left: 10px;
+  max-width: 360px;
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+}
+
+.update-text span {
+  font-weight: 500;
+}
+
+.hanako-flowers {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  z-index: 10;
+}
+.update-video-container {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+  z-index: -1;
+}
+
+.update-video-container::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -25px;
+  right: -20px;
+  bottom: -3px;
+  background-image: url('../images/closet/closet-video-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.update-video {
+  width: 100%;
+  height: auto;
+}
+
+.closet-right-text {
+  margin-top: 400px;
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #fff;
+}
+
+.closet-right-title-600 {
+  font-weight: 600;
+}
+
+.closet-right-title-700 {
+  font-weight: 700;
+}
+
+.closet-right-description {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.closet-right-image {
+  margin-top: 2px;
+  max-width: 100%;
+}
+
+.house-image {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  transform: scale(1.25) translateX(15px);
+}
+
+@media screen and (max-width: 1600px) {
+  .closet-container {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .closet-container {
+    grid-template-columns: 1fr;
+    margin-right: 0;
+    min-height: auto;
+  }
+
+  .closet-left {
+    padding: 50px 30px;
+  }
+
+  .closet-monster {
+    left: -40px;
+    top: auto;
+    bottom: 0;
+    max-width: 450px;
+    z-index: 1;
+  }
+
+  .monster-image {
+    max-width: 450px;
+  }
+
+  .closet-left-content {
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .closet-left-text {
+    margin-top: 0px;
+  }
+
+  .closet-images {
+    position: relative;
+    bottom: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+
+  .polaroid {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+  }
+
+  .polaroid-1,
+  .polaroid-2,
+  .polaroid-3 {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+  }
+
+  .polaroid-1 img,
+  .polaroid-2 img,
+  .polaroid-3 img {
+    max-width: 200px;
+    width: 200px;
+    height: auto;
+  }
+
+  .closet-right {
+    padding: 50px 30px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .closet-right-columns {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .closet-right-left {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .closet-right-text {
+    margin-top: 0;
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .closet-right-description {
+    text-align: left;
+  }
+
+  .house-image {
+    transform: scale(1.25);
+  }
+
+  .closet-right-right {
+    margin-top: 0;
+    width: 100%;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .closet-update-box {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .closet-main-title {
+    font-size: 56px;
+  }
+
+  .closet-god-text {
+    font-size: 32px;
+  }
+
+  .closet-god-text span {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .closet-main-title {
+    font-size: 48px;
+  }
+
+  .closet-gate-title {
+    font-size: 18px;
+  }
+
+  .closet-subtitle {
+    font-size: 14px;
+  }
+
+  .closet-subtitle span {
+    font-size: 32px;
+  }
+
+  .closet-description {
+    font-size: 18px;
+  }
+
+  .closet-right-text {
+    font-size: 32px;
+    margin-top: 300px;
+  }
+
+  .update-text {
+    font-size: 18px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .closet-container {
+    grid-template-columns: 1fr;
+    margin-right: 0;
+    min-height: auto;
+  }
+
+  .closet-left {
+    padding: 40px 20px;
+    min-height: 600px;
+  }
+
+  .closet-monster {
+    left: -40px;
+    max-width: 400px;
+  }
+
+  .monster-image {
+    max-width: 400px;
+  }
+
+  .closet-left-text {
+    margin-top: 60px;
+    font-size: 18px;
+  }
+
+  .closet-main-title {
+    font-size: 40px;
+  }
+
+  .closet-subtitle {
+    font-size: 14px;
+  }
+
+  .closet-subtitle span {
+    font-size: 28px;
+  }
+
+  .closet-god-text {
+    font-size: 28px;
+  }
+
+  .closet-god-text span {
+    font-size: 32px;
+  }
+
+  .closet-description {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .closet-images {
+    gap: 0;
+    height: 250px;
+    width: 250px;
+  }
+
+  .polaroid-1 img,
+  .polaroid-2 img,
+  .polaroid-3 img {
+    max-width: 180px;
+  }
+
+  .closet-right {
+    padding: 40px 20px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .closet-right-columns {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .closet-right-left {
+    min-width: 100%;
+    flex-direction: column;
+  }
+
+  .closet-right-text {
+    margin-top: 0;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .closet-right-description {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .house-image {
+    min-width: 100%;
+    transform: scale(1.1) translateX(0);
+  }
+
+  .closet-right-image {
+    width: 80%;
+  }
+
+  .closet-right-right {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .closet-update-box {
+    max-width: 100%;
+  }
+
+  .update-image {
+    max-width: 100%;
+  }
+
+  .update-text {
+    font-size: 16px;
+    max-width: 280px;
+    top: 20px;
+  }
+
+  .update-video-container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .closet-left {
+    padding: 30px 15px;
+    min-height: 500px;
+  }
+
+  .closet-monster {
+    left: -120px;
+    max-width: 300px;
+  }
+
+  .monster-image {
+    max-width: 300px;
+  }
+
+  .closet-left-text {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+
+  .closet-main-title {
+    font-size: 32px;
+  }
+
+  .closet-gate-title {
+    font-size: 16px;
+  }
+
+  .closet-subtitle {
+    font-size: 12px;
+  }
+
+  .closet-subtitle span {
+    font-size: 24px;
+  }
+
+  .closet-god-text {
+    font-size: 24px;
+  }
+
+  .closet-god-text span {
+    font-size: 28px;
+  }
+
+  .closet-description {
+    font-size: 14px;
+  }
+
+  .closet-images {
+    height: 200px;
+    width: 200px;
+    flex-direction: column;
+  }
+
+  .polaroid-1 {
+    top: 150px;
+    left: 150px;
+    transform: rotate(20deg);
+  }
+  .polaroid-2 {
+    top: 50px;
+    left: -10px;
+    transform: rotate(-10deg);
+  }
+
+  .polaroid-3 {
+    top: -225px;
+    left: 20px;
+    transform: rotate(-30deg);
+  }
+
+  .polaroid-1 img,
+  .polaroid-2 img,
+  .polaroid-3 img {
+    max-width: 150px;
+  }
+
+  .closet-right {
+    padding: 30px 15px;
+  }
+
+  .closet-right-text {
+    font-size: 24px;
+  }
+
+  .closet-right-description {
+    font-size: 14px;
+  }
+
+  .house-image {
+    max-width: 180px;
+  }
+
+  .update-text {
+    font-size: 14px;
+    max-width: 240px;
+    top: 15px;
+  }
+
+  .hanako-flowers {
+    max-width: 50%;
+  }
+}

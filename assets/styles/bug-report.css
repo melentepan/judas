@@ -1,0 +1,462 @@
+body {
+  background-color: #000;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.bug-report-section {
+  position: relative;
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 200px 20px 60px;
+}
+
+.bug-report-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+}
+
+.bug-report-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.bug-report-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.bug-report-title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bug-report-title-text {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 700;
+  font-size: 96px;
+  letter-spacing: 0.2em;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3),
+    0 0 40px rgba(255, 255, 255, 0.1);
+}
+
+.bug-report-butterfly-icon {
+  width: 145px;
+  height: 110px;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
+  animation: butterfly-float 4s ease-in-out infinite;
+}
+
+@keyframes butterfly-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-5px) rotate(3deg);
+  }
+}
+
+.bug-report-subtitle {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.bug-report-subtitle.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.bulletin-container {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.bulletin-header {
+  position: relative;
+  max-width: 730px;
+
+  padding-bottom: 20px;
+}
+
+.bulletin-icon {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.bulletin-header-text {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.bulletin-title {
+  position: relative;
+  display: block;
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  line-height: 1.4;
+  flex: 1;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.bulletin-title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bulletin-gear-icon {
+  position: absolute;
+  left: -80px;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.bulletin-gear-icon.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bulletin-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bulletin-intro {
+  max-width: 730px;
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.bulletin-intro.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bug-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.bug-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bug-title {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+
+.bug-description {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.bug-description strong {
+  font-weight: 700;
+}
+
+.bug-list {
+  list-style-position: outside;
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+.bug-list li {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.bulletin-footer-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.bulletin-footer {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.4;
+  flex: 1;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.bulletin-footer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(196, 181, 130, 0.6);
+  padding: 10px 40px;
+  border: 1px solid #fff;
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: lowercase;
+  flex-shrink: 0;
+}
+
+.back-button:hover {
+  background: #b8941f;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bug-report-section {
+    padding: 150px 20px 50px;
+  }
+
+  .bug-report-container {
+    gap: 80px;
+  }
+
+  .bug-report-title-text {
+    font-size: 72px;
+  }
+
+  .bug-report-butterfly-icon {
+    width: 100px;
+    height: 76px;
+  }
+
+  .bug-report-subtitle {
+    font-size: 32px;
+  }
+
+  .bulletin-title {
+    font-size: 20px;
+  }
+
+  .bulletin-gear-icon {
+    left: auto;
+    width: 50px;
+    height: 50px;
+    position: static;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bug-report-section {
+    padding: 120px 15px 40px;
+  }
+
+  .bug-report-container {
+    gap: 60px;
+  }
+
+  .bug-report-title {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bug-report-title-text {
+    font-size: 56px;
+  }
+
+  .bug-report-butterfly-icon {
+    width: 80px;
+    height: 60px;
+  }
+
+  .bug-report-subtitle {
+    font-size: 28px;
+  }
+
+  .bulletin-container {
+    padding: 15px;
+    gap: 25px;
+  }
+
+  .bulletin-header {
+    max-width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .bulletin-title {
+    font-size: 18px;
+  }
+
+  .bulletin-intro {
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .bug-title {
+    font-size: 18px;
+  }
+
+  .bug-description {
+    font-size: 16px;
+  }
+
+  .bug-list li {
+    font-size: 16px;
+  }
+
+  .bulletin-footer-wrapper {
+    flex-direction: column;
+    gap: 25px;
+    align-items: stretch;
+  }
+
+  .bulletin-footer {
+    font-size: 16px;
+  }
+
+  .back-button {
+    font-size: 18px;
+    padding: 8px 35px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bug-report-section {
+    padding: 100px 10px 30px;
+  }
+
+  .bug-report-container {
+    gap: 40px;
+  }
+
+  .bug-report-title-text {
+    font-size: 40px;
+  }
+
+  .bug-report-butterfly-icon {
+    width: 60px;
+    height: 45px;
+  }
+
+  .bug-report-subtitle {
+    font-size: 24px;
+  }
+
+  .bulletin-container {
+    padding: 10px;
+  }
+
+  .bulletin-title {
+    font-size: 16px;
+  }
+
+  .bulletin-intro {
+    font-size: 14px;
+  }
+
+  .bug-title {
+    font-size: 16px;
+  }
+
+  .bug-description {
+    font-size: 14px;
+  }
+
+  .bug-list li {
+    font-size: 14px;
+  }
+
+  .bulletin-footer {
+    font-size: 14px;
+  }
+
+  .back-button {
+    font-size: 16px;
+    padding: 6px 30px;
+  }
+}

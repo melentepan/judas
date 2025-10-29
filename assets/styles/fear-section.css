@@ -1,0 +1,366 @@
+.fear-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.fear-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.fear-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fear-container {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+  max-width: 1185px;
+  margin: 0 auto;
+  color: white;
+  padding-bottom: 145px;
+}
+
+.fear-title {
+  text-align: center;
+  margin-bottom: 55px;
+  margin-top: 90px;
+}
+
+.horror-theme {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #1c1c1c;
+}
+
+.biggest-fear {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  text-align: center;
+  color: #1c1c1c;
+  margin-top: 5px;
+}
+
+.gates-section {
+  margin-bottom: 65px;
+}
+
+.gates-label {
+  transform: rotate(-90deg);
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  background: rgba(196, 181, 130, 0.6);
+}
+
+.gates-grid {
+  display: flex;
+  position: relative;
+}
+
+.gates-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 20% 100%);
+}
+
+.gates-video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gate-block {
+  background: rgba(0, 0, 0, 0.7);
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 40px 10px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  aspect-ratio: 0.5;
+  width: 100%;
+}
+
+.gate-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.gate-number {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 600;
+  font-size: 96px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 35px;
+}
+
+.gate-title {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 2px;
+  text-wrap: nowrap;
+}
+
+.gate-action {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #e9e9e9;
+  position: relative;
+  z-index: 2;
+}
+
+.gate-question {
+  font-size: 4rem;
+  color: #666;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.gate-locked-text {
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 2;
+}
+
+.gate-title-card {
+  background: rgba(196, 181, 130, 0.6);
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.gates-title-text {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg) translateX(-2px);
+}
+
+.fear-story-section {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.fear-story-left {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  max-width: 267px;
+}
+.fear-story-right {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #1c1c1c;
+  max-width: 298px;
+}
+
+@media screen and (max-width: 1024px) {
+  .fear-container {
+    max-width: 960px;
+    padding: 0 15px;
+    padding-bottom: 100px;
+  }
+
+  .horror-theme {
+    font-size: 20px;
+  }
+
+  .biggest-fear {
+    font-size: 40px;
+  }
+
+  .gate-number {
+    font-size: 72px;
+  }
+
+  .gate-title {
+    font-size: 20px;
+  }
+
+  .fear-story-section {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fear-container {
+    padding: 0 15px 60px;
+  }
+
+  .fear-title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .horror-theme {
+    font-size: 18px;
+  }
+
+  .biggest-fear {
+    font-size: 32px;
+  }
+
+  .gates-section {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .gates-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gate-title-card {
+    width: 100%;
+    min-height: 60px;
+  }
+
+  .gates-title-text {
+    font-size: 14px;
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .gate-block {
+    min-width: 140px;
+    flex: 1 1 calc(50% - 5px);
+    aspect-ratio: 0.7;
+  }
+
+  .gate-number {
+    font-size: 56px;
+    margin-bottom: 20px;
+  }
+
+  .gate-title {
+    font-size: 16px;
+  }
+
+  .gate-action {
+    font-size: 12px;
+  }
+
+  .gates-video-container {
+    clip-path: none;
+  }
+
+  .fear-story-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .fear-story-left,
+  .fear-story-right {
+    color: #1c1c1c;
+    max-width: 100%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fear-container {
+    padding: 0 10px 40px;
+  }
+
+  .fear-title {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .horror-theme {
+    font-size: 16px;
+  }
+
+  .biggest-fear {
+    font-size: 24px;
+  }
+
+  .gates-section {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .gate-block {
+    min-width: 120px;
+    padding: 20px 5px;
+  }
+
+  .gate-number {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+
+  .gate-title {
+    font-size: 14px;
+  }
+
+  .gate-action {
+    font-size: 11px;
+  }
+
+  .fear-story-left,
+  .fear-story-right {
+    font-size: 14px;
+  }
+}

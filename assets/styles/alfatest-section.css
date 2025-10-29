@@ -1,0 +1,132 @@
+.alfatest-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 200px;
+  padding-bottom: 120px;
+}
+
+.alfatest-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.alfatest-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.alfatest-bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.alfatest-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.alfatest-title {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: #fff;
+  margin: 0 0 100px 0;
+  letter-spacing: 0.02em;
+}
+
+.alfatest-description {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1024px) {
+  .alfatest-section {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .alfatest-background::after {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .alfatest-title {
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
+
+  .alfatest-description {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .alfatest-section {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+
+  .alfatest-background::after {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .alfatest-container {
+    padding: 0 20px;
+  }
+
+  .alfatest-title {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+
+  .alfatest-description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .alfatest-section {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .alfatest-background::after {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .alfatest-container {
+    padding: 0 15px;
+  }
+
+  .alfatest-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .alfatest-description {
+    font-size: 13px;
+  }
+}

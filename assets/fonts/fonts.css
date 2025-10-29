@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Avenir Next W1G';
+  src: local('Avenir Next W1G Light'), local('AvenirNextW1G-Light'),
+    url('AvenirNextW1G-Light.woff2') format('woff2'),
+    url('AvenirNextW1G-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next W1G';
+  src: local('Avenir Next W1G Medium'), local('AvenirNextW1G-Medium'),
+    url('AvenirNextW1G-Medium.woff2') format('woff2'),
+    url('AvenirNextW1G-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next W1G Demi';
+  src: local('Avenir Next W1G Demi'), local('AvenirNextW1G-Demi'),
+    url('AvenirNextW1G-Demi.woff2') format('woff2'),
+    url('AvenirNextW1G-Demi.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next W1G';
+  src: local('Avenir Next W1G Bold'), local('AvenirNextW1G-Bold'),
+    url('AvenirNextW1G-Bold.woff2') format('woff2'),
+    url('AvenirNextW1G-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter Medium Italic'), local('Inter-MediumItalic'),
+    url('InterMediumItalic.woff2') format('woff2'),
+    url('InterMediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter Semi Bold Italic'), local('Inter-SemiBoldItalic'),
+    url('InterSemiBoldItalic.woff2') format('woff2'),
+    url('InterSemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}

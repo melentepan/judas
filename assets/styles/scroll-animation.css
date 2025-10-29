@@ -1,0 +1,47 @@
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-fade-in.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.scroll-fade-in.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.scroll-fade-in.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.scroll-fade-in.delay-4 {
+  transition-delay: 0.4s;
+}
+
+h1.scroll-fade-in,
+h2.scroll-fade-in,
+h3.scroll-fade-in,
+p.scroll-fade-in,
+div.scroll-fade-in,
+span.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+h1.scroll-fade-in.visible,
+h2.scroll-fade-in.visible,
+h3.scroll-fade-in.visible,
+p.scroll-fade-in.visible,
+div.scroll-fade-in.visible,
+span.scroll-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

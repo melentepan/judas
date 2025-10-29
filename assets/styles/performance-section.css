@@ -1,0 +1,265 @@
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+.performance-section {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 0 192px;
+  box-sizing: border-box;
+}
+
+.performance-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.performance-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.performance-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.performance-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.performance-title {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 0.63em;
+  color: #1c1c1c;
+  margin: 0;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.performance-title-main {
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+}
+
+.performance-title-subtitle {
+  font-size: 16px;
+  letter-spacing: 0.53em;
+  display: block;
+}
+
+.performance-subtitle {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #1c1c1c;
+  text-align: left;
+  margin: 0 0 30px 0;
+  line-height: 1.3;
+}
+
+.performance-content {
+  display: flex;
+  gap: 15px;
+  align-items: start;
+  max-width: 100%;
+}
+
+.performance-image {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.performance-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.performance-text {
+  max-width: 600px;
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #1c1c1c;
+  box-sizing: border-box;
+}
+
+.performance-text strong {
+  font-weight: 700;
+}
+
+.performance-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.performance-text ul li {
+  padding-left: 15px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.performance-text ul li:first-child {
+  margin-top: 5px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.performance-text ul li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.performance-text ul li:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .performance-section {
+    padding: 60px 0 150px;
+  }
+
+  .performance-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .performance-title {
+    font-size: 40px;
+  }
+
+  .performance-title-main {
+    font-size: 32px;
+  }
+
+  .performance-subtitle {
+    font-size: 32px;
+  }
+
+  .performance-content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .performance-image {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .performance-text {
+    max-width: 100%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .performance-section {
+    padding: 50px 20px 100px;
+  }
+
+  .performance-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .performance-title {
+    font-size: 32px;
+    letter-spacing: 0.3em;
+  }
+
+  .performance-title-main {
+    font-size: 24px;
+  }
+
+  .performance-title-subtitle {
+    font-size: 13px;
+    letter-spacing: 0.25em;
+  }
+
+  .performance-subtitle {
+    font-size: 28px;
+  }
+
+  .performance-image {
+    max-width: 400px;
+  }
+
+  .performance-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .performance-section {
+    padding: 40px 15px 80px;
+  }
+
+  .performance-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .performance-title {
+    font-size: 28px;
+    letter-spacing: 0.2em;
+  }
+
+  .performance-title-main {
+    font-size: 20px;
+  }
+
+  .performance-title-subtitle {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+  }
+
+  .performance-subtitle {
+    font-size: 20px;
+  }
+
+  .performance-image {
+    max-width: 320px;
+  }
+
+  .performance-text {
+    font-size: 13px;
+  }
+}

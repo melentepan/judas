@@ -1,0 +1,169 @@
+.fight-section {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fight-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 47px 0 150px;
+}
+
+.fight-title {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.fight-video-container {
+  position: relative;
+  width: 1097px;
+  height: 459px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.fight-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fight-video::-webkit-media-controls {
+  display: flex !important;
+}
+
+.fight-video::-webkit-media-controls-play-button {
+  display: none !important;
+}
+
+.fight-video::-webkit-media-controls-current-time-display,
+.fight-video::-webkit-media-controls-time-remaining-display {
+  color: #fff;
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-size: 12px;
+}
+
+.fight-video::-webkit-media-controls-volume-slider {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.fight-video::-webkit-media-controls-mute-button {
+  color: #fff;
+}
+
+.fight-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+
+.fight-play-button:hover {
+  opacity: 0.8;
+}
+
+.play-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.fight-credit {
+  position: absolute;
+  bottom: -30px;
+  left: -1px;
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+  z-index: 5;
+}
+
+@media screen and (max-width: 1200px) {
+  .fight-container {
+    padding: 40px 20px 120px;
+  }
+
+  .fight-video-container {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .fight-container {
+    padding: 35px 20px 100px;
+  }
+
+  .fight-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .fight-video-container {
+    max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fight-container {
+    padding: 30px 20px 80px;
+  }
+
+  .fight-title {
+    font-size: 24px;
+  }
+
+  .fight-video-container {
+    max-width: 100%;
+  }
+
+  .play-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .fight-credit {
+    font-size: 16px;
+    bottom: -25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fight-container {
+    padding: 25px 15px 60px;
+  }
+
+  .fight-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .play-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .fight-credit {
+    font-size: 14px;
+    bottom: -22px;
+  }
+}

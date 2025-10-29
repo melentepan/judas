@@ -1,0 +1,142 @@
+.token-section {
+  background-color: #000;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+.token-container {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.token-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.token-image {
+  max-width: 383px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.token-title {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.token-content {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.token-text {
+  font-family: 'Avenir Next W1G', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+  max-width: 515px;
+}
+
+@media screen and (max-width: 1024px) {
+  .token-section {
+    padding-bottom: 60px;
+  }
+
+  .token-images {
+    gap: 15px;
+  }
+
+  .token-image {
+    max-width: 320px;
+  }
+
+  .token-title {
+    margin-top: 100px;
+    font-size: 28px;
+  }
+
+  .token-content {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .token-section {
+    padding: 0 15px 40px;
+  }
+
+  .token-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .token-image {
+    max-width: 350px;
+  }
+
+  .token-title {
+    margin-top: 60px;
+    font-size: 24px;
+  }
+
+  .token-content {
+    margin-top: 30px;
+  }
+
+  .token-text {
+    font-size: 15px;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .token-section {
+    padding: 0 10px 30px;
+  }
+
+  .token-images {
+    gap: 15px;
+  }
+
+  .token-image {
+    max-width: 280px;
+  }
+
+  .token-title {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+
+  .token-content {
+    margin-top: 25px;
+  }
+
+  .token-text {
+    font-size: 14px;
+  }
+}
