@@ -1,12 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
+  if (window.innerWidth < 768) {
+    return
+  }
+
   const parallaxLayers = document.querySelectorAll('.parallax-layer')
 
   const layerSpeeds = {
     'layer-0': 0,
-    'layer-1': 0.3,
-    'layer-2': 0.5,
-    'layer-3': 0.7,
-    'layer-4': 0.9,
+    'layer-1': 0.1,
+    'layer-2': 0.3,
+    'layer-3': 0.4,
+    'layer-4': 0.6,
   }
 
   let mouseX = 0
