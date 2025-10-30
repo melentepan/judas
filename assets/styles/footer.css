@@ -28,6 +28,15 @@
   flex-grow: 1;
 }
 
+.footer-left a {
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+.footer-left a:hover {
+  opacity: 0.7;
+}
+
 .footer-logo {
   width: 54px;
   height: 54px;

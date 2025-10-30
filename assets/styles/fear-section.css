@@ -107,6 +107,21 @@
   overflow: hidden;
   aspect-ratio: 0.5;
   width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gate-s1:hover,
+.gate-s2:hover,
+.gate-s3:hover {
+  background: rgb(0, 0, 0);
+  border-color: #fff;
+}
+
+.gate-s1:hover .gate-image,
+.gate-s2:hover .gate-image,
+.gate-s3:hover .gate-image {
+  opacity: 0.3;
 }
 
 .gate-image {
@@ -117,6 +132,7 @@
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  transition: opacity 0.3s ease;
 }
 
 .gate-number {
