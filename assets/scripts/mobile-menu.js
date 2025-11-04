@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         : ''
     })
 
-    const navLinks = document.querySelectorAll('.nav-link')
+    const navLinks = document.querySelectorAll('.nav-link, .header-social-link')
     navLinks.forEach((link) => {
       link.addEventListener('click', function () {
         mobileToggle.classList.remove('active')
