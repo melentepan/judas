@@ -2,6 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
+#gallery-section,
+#token-section,
+#closet-section {
+  scroll-margin-top: 100px;
+}
+
 html,
 body,
 div,
