@@ -29,29 +29,29 @@
 }
 
 .layer-0 {
-  background-image: url('../images/paralax/слой-0.webp');
+  background-image: url('../images/paralax/layer-0.webp');
   z-index: 1;
   transform: translate3d(0, 0, 0) !important;
   will-change: auto;
 }
 
 .layer-1 {
-  background-image: url('../images/paralax/слой-1.webp');
+  background-image: url('../images/paralax/layer-1.webp');
   z-index: 2;
 }
 
 .layer-2 {
-  background-image: url('../images/paralax/слой-2.webp');
+  background-image: url('../images/paralax/layer-2.webp');
   z-index: 3;
 }
 
 .layer-3 {
-  background-image: url('../images/paralax/слой-3.webp');
+  background-image: url('../images/paralax/layer-3.webp');
   z-index: 4;
 }
 
 .layer-4 {
-  background-image: url('../images/paralax/слой-4.webp');
+  background-image: url('../images/paralax/layer-4.webp');
   z-index: 5;
 }
 
